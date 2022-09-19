@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/telaInicial/telaInicial.css">
+    <link rel="stylesheet" href="assets/css/telaInicial/telaInicial-informacoes.css">
+    <link rel="stylesheet" href="assets/css/telaInicial/telaInicial-escolhas.css">
+    <link rel="stylesheet" href="assets/css/telaInicial/telaInicial-escolhas-filme.css">
+    <link rel="stylesheet" href="assets/css/telaInicial/telaInicial-escolhas-livro.css">
+    <link rel="stylesheet" href="assets/css/informacao/informacao.css">
+    <link rel="stylesheet" href="assets/css/informacao/informacao-lista.css">
+    <link rel="stylesheet" href="assets/css/informacao/informacao-rodape.css">
+    <link rel="stylesheet" href="assets/css/informacao/informacao-fechar.css">
+    <link rel="stylesheet" href="assets/css/sectionFilme/sectionFilme.css">
+    <link rel="stylesheet" href="assets/css/sectionFilme/sectionFime-opcoes.css">
+    <link rel="stylesheet" href="assets/css/sectionFilme/sectionFilme-botao.css">
+    <link rel="stylesheet" href="assets/css/listaFilmes/listaFilmes.css">
+    <link rel="stylesheet" href="assets/css/listaFilmes/listaFilmes-item.css">
+    <link rel="stylesheet" href="assets/css/listaFilmes/listaFilmes-item-titulo.css">
+    <link rel="stylesheet" href="assets/css/formFilme/formFilme.css">
+    <link rel="stylesheet" href="assets/css/formFilme/formFilme-botao.css">
+    <link rel="stylesheet" href="assets/css/sectionLivro/sectionLivro.css">
+    <link rel="stylesheet" href="assets/css/sectionLivro/sectionLivro-opcoes.css">
+    <link rel="stylesheet" href="assets/css/sectionLivro/sectionLivro-botao.css">
+    <link rel="stylesheet" href="assets/css/formLivro/formLivro.css">
+    <link rel="stylesheet" href="assets/css/formLivro/formLivro-botao.css">
+    <link rel="stylesheet" href="assets/css/listaLivros/listaLivros.css">
+    <link rel="stylesheet" href="assets/css/listaLivros/listaLivros-item.css">
+    <link rel="stylesheet" href="assets/css/listaLivros/listaLivros-item-titulo.css">
+
+    <!-- Google Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- Título -->
+    <title>Indicaí</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      Introdução ao Desenvolvimento Web
+    </header>
+
+    <main>
+      <section id="telaInicial" class="telaInicial">
+        <h1>Seja bem vindo ao software indicaí</h1>
+        <h3 id="telaInicial__informacoes" class="telaInicial__informacoes">Ver informações</h3>
+        <h2>O que deseja ver ?</h2>
+        <div class="telaInicial__escolhas">
+          <div id="escolhaFilme" class="telaInicial__escolhas__filme">Filme</div>
+          <div id="escolhaLivro" class="telaInicial__escolhas__livro">Livro</div>
+        </div>
+      </section>
+
+      <section id="informacao" class="informacao">
+        <p><strong>Nome do projeto:</strong> Software indicaí</p>
+        <p><strong>Disciplina:</strong> Introdução ao desenvolvimento web</p>
+        <p><strong>Integrantes:</strong></p>
+        <ul class="informacao__lista">
+          <li>Raffael Eloi da Silva</li>
+          <li>Odali Araujo de Sousa Junior</li>
+        </ul>
+        <p><strong>Propósito:</strong> Um software que é possível fazer indicações de filmes e series ou ver as indicações realizadas por outras pessoas.</p>
+        <p class="informacao__rodape"><strong>Centro Universitário Luterano de Palmas</strong></p>
+        <button id="informacao__fechar" class="informacao__fechar">Fechar</button>
+      </section>
+
+      <section id="sectionFilme" class="sectionFilme">
+        <div class="sectionFilme__opcoes">
+          <h1>O que deseja ver no filme?</h1>
+          <div>
+            <button id="botaoIndicarFilme" class="sectionFilme__botao">Indicar filme</button>
+            <button id="botaoVerIndicacoesFilme" class="sectionFilme__botao">Ver indicações de filme</button>
+          </div>
+        </div>
+
+        <form id="formIndicacaoFilme" class="formFilme">
+          <fieldset>
+            <legend>Nome</legend>
+            <input id="inputNomeFilme" type="text" placeholder="nome do filme" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Gênero</legend>
+            <input id="inputGeneroFilme" type="text" placeholder="ex.: Ação" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Descrição</legend>
+            <textarea name="textAreaDescricaoFilme" id="textAreaDescricaoFilme" cols="30" rows="10" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Nota</legend>
+            <input id="inputNotaFilme" type="number" placeholder="ex.: 8" required>
+          </fieldset>
+          
+          <button id="botaoEnviarAvaliacaoFilme" class="formFilme__botao">Enviar avaliação</button>
+        </form>
+      </section>
+
+      <div id="listaFilmes" class="listaFilmes">
+          <div class="listaFilmes__item" id="listaFilmes__item">
+            <h3 class="listaFilmes__item__titulo">Filme</h3>
+            <p>Nome: <span id="listaFilmesNome"></span></p>
+            <p>Gênero: <span id="listaFilmesGenero"></span></p>
+            <p>Descrição: </p>
+            <div id="listaFilmesDescricao"></div>
+            <p>Nota: <span id="listaFilmesNota"></span></p>
+          </div>
+      </div>
+
+      <section id="sectionLivro" class="sectionLivro">
+        <div class="sectionLivro__opcoes">
+          <h1>O que deseja ver no livro?</h1>
+          <div>
+            <button id="botaoIndicarLivro" class="sectionLivro__botao">Indicar livro</button>
+            <button id="botaoVerIndicacoesLivro" class="sectionLivro__botao">Ver indicações de livro</button>
+          </div>
+        </div>
+      </section>
+
+      <form id="formIndicacaoLivro" class="formLivro">
+        <fieldset>
+          <legend>Nome</legend>
+          <input id="inputNomeLivro" type="text" placeholder="nome do livro" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gênero</legend>
+          <input id="inputGeneroLivro" type="text" placeholder="ex.: Ficção científica" required>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Quantidade de páginas</legend>
+          <input id="inputQtdPaginasLivro" type="number" placeholder="ex.: 51" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Descrição</legend>
+          <textarea name="textAreaDescricaoLivro" id="textAreaDescricaoLivro" cols="30" rows="10" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nota</legend>
+          <input id="inputNotaLivro" type="number" placeholder="ex.: 8" required>
+        </fieldset>
+
+        <button id="botaoEnviarAvaliacaoLivro" class="formLivro__botao">Enviar avaliação</button>
+      </form>
+      
+      <div id="listaLivros" class="listaLivros">
+        <div class="listaLivros__item" id="listaLivros__item">
+          <h3 class="listaLivros__item__titulo">Livro</h3>
+          <p>Nome: <span id="listaLivrosNome"></span></p>
+          <p>Gênero: <span id="listaLivrosGenero"></span></p>
+          <p>Qtd páginas: <span id="listaLivrosQtdPaginas"></span></p>
+          <p>Descrição: </p>
+          <div id="listaLivrosDescricao"></div>
+          <p>Nota: <span id="listaLivrosNota"></span></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

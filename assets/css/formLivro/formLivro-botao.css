@@ -1,0 +1,15 @@
+.formLivro__botao {
+  margin-left: 40%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 400ms all;
+  background: rgb(73, 73, 73);;
+}
+
+.formLivro__botao:hover {
+  cursor: pointer;
+  color: #fdfdfd;
+}

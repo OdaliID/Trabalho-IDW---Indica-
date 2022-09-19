@@ -1,0 +1,13 @@
+.telaInicial__informacoes {
+  padding: 1rem;
+  border: 2px solid gray;
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 1rem;
+  transition: 400ms;
+}
+
+.telaInicial__informacoes:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px gray;
+}

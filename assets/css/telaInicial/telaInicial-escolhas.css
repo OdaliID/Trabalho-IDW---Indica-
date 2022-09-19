@@ -1,0 +1,5 @@
+.telaInicial__escolhas {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}

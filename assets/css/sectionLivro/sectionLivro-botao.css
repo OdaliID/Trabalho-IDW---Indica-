@@ -1,0 +1,13 @@
+.sectionLivro__botao {
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 400ms all;
+}
+
+.sectionLivro__botao:hover {
+  cursor: pointer;
+  background: rgb(73, 73, 73);
+  color: #fdfdfd;
+}

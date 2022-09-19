@@ -1,0 +1,12 @@
+.formLivro {
+  margin-top: 1rem;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.formLivro input, .formLivro textarea{
+  border-radius: 5px;
+  width: 100%;
+  background: #cdeeb6;
+  padding: 0.25rem 0;
+}

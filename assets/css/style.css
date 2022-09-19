@@ -1,0 +1,36 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  display: grid;
+  grid-template-areas: 
+    "cabecalho",
+    "conteudo-principal",
+    "rodape";
+  grid-template-rows: auto auto auto;
+}
+
+header {
+  grid-area: "cabecalho";
+}
+
+.cabecalho {
+  background: rgb(73, 73, 73);
+  padding: 1rem;
+  text-align: center;
+  color: #fdfdfd;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.cabecalho:hover {
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+  grid-area: "conteudo-principal";
+}
+
+rodape {
+  grid-area: "rodape";
+}
